@@ -23,7 +23,7 @@ export const pagesConfig: PagesConfig = {
   },
   skills: {
     title: "Skills",
-    description: "プライム上場企業での事業開発、2社のスタートアップの創業・経営を通じて得たスキル・経験を活かして、経営の改善をご支援しています",
+    description: "広範なビジネスサイドの経験 ✕ AI活用 ✕ グローバル が強みです",
     metadata: {
       title: "Skills",
       description:
@@ -31,11 +31,11 @@ export const pagesConfig: PagesConfig = {
     },
   },
   experience: {
-    title: "Experience",
-    description: "Highlighting career journey and impactful projects.",
+    title: "Career",
+    description: "これまでの仕事",
     metadata: {
-      title: "Experience",
-      description: "Ryota Ishihara's experience in building web applications.",
+      title: "Career",
+      description: "これまでの仕事",
     },
   },
   contact: {

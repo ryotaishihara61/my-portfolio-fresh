@@ -25,12 +25,19 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <h5 className="text-2xl font-bold tracking-tight text-foreground">
           {project.companyName}
         </h5>
-        <p className="line-clamp-3 font-normal text-muted-foreground">
-          {project.shortDescription}
-        </p>
-        <div className="flex gap-2 flex-wrap">
-          <ChipContainer textArr={project.category} />
-        </div>
+
+        {project.shortDescription && (
+          <p className="line-clamp-3 font-normal text-muted-foreground">
+            {project.shortDescription}
+          </p>
+        )}
+
+        {project.category?.length > 0 && (
+          <div className="flex gap-2 flex-wrap">
+            <ChipContainer textArr={project.category} />
+          </div>
+        )}
+
         <Link href={`/experience/${project.id}`}>
           <Button variant={"default"} className="mt-2">
             Read more
@@ -38,6 +45,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           </Button>
         </Link>
       </div>
+
       <div className="absolute bottom-4 right-4 p-3 rounded-full bg-background border border-border">
         {project.type === "Personal Project" ? (
           <Icons.userFill className="h-4 w-4" />

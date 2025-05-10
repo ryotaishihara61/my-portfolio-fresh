@@ -34,20 +34,17 @@ export default function ExperiencePage() {
       title={pagesConfig.experience.title}
       description={pagesConfig.experience.description}
     >
-      <Tabs defaultValue="all" className="w-full">
-        <TabsList className="conatiner grid max-w-[30rem] grid-cols-3">
+      {/* タブUIを非表示にしたいので、TabsListとTabsTriggerは削除 */}
+      {/* <TabsList className="conatiner grid max-w-[30rem] grid-cols-3">
           <TabsTrigger value="all">All</TabsTrigger>
           <TabsTrigger value="personal">Personal</TabsTrigger>
           <TabsTrigger value="professional">Professional</TabsTrigger>
-        </TabsList>
-        <TabsContent value="all" className="w-full">
-          {renderContent("all")}
-        </TabsContent>
-        <TabsContent value="professional">
-          {renderContent("professional")}
-        </TabsContent>
-        <TabsContent value="personal">{renderContent("personal")}</TabsContent>
-      </Tabs>
+      </TabsList> */}
+
+      {/* 全部表示するコンテンツのみ残す */}
+      <div className="w-full">
+        {renderContent("all")}
+      </div>
     </PageContainer>
   );
 }
