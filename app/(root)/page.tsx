@@ -5,7 +5,6 @@ import Script from "next/script";
 
 import { AnimatedSection } from "@/components/common/animated-section";
 import { AnimatedText } from "@/components/common/animated-text";
-import { ClientPageWrapper } from "@/components/common/client-page-wrapper";
 import { Icons } from "@/components/common/icons";
 import ContributionCard from "@/components/contributions/contribution-card";
 import ProjectCard from "@/components/experience/project-card";
@@ -17,10 +16,10 @@ import { pagesConfig } from "@/config/pages";
 import { siteConfig } from "@/config/site";
 import { featuredSkills } from "@/config/skills";
 import { cn } from "@/lib/utils";
-import namanImg from "@/public/naman-img.jpg";
+import namanImg from "@/public/Ryota Ishihara.jpg";
 
 export const metadata: Metadata = {
-  title: `${pagesConfig.home.metadata.title} | Modern Next.js Developer Portfolio Template`,
+  title: `${pagesConfig.home.metadata.title} | 経営支援パートナー`,
   description: `${pagesConfig.home.metadata.description} This open-source Next.js portfolio template is customizable to showcase your skills and projects.`,
   alternates: {
     canonical: siteConfig.url,
@@ -35,7 +34,7 @@ export default function IndexPage() {
     name: siteConfig.authorName,
     url: siteConfig.url,
     image: siteConfig.ogImage,
-    jobTitle: "Full Stack Developer",
+    jobTitle: "経営支援パートナー",
     sameAs: [siteConfig.links.github, siteConfig.links.twitter],
   };
 
@@ -59,7 +58,7 @@ export default function IndexPage() {
   };
 
   return (
-    <ClientPageWrapper>
+    <main>
       <Script
         id="schema-person"
         type="application/ld+json"
@@ -79,7 +78,7 @@ export default function IndexPage() {
             width={100}
             sizes="100vw"
             className="bg-primary rounded-full mb-0 h-auto md:mb-2 w-[60%] max-w-[16rem] border-8 border-primary"
-            alt="Naman Barkiya - Full Stack Developer Portfolio"
+            alt="Ryota Ishihara - Portfolio"
             priority
           />
           <AnimatedText
@@ -87,54 +86,53 @@ export default function IndexPage() {
             delay={0.2}
             className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl"
           >
-            Naman Barkiya
+            石原 良太
           </AnimatedText>
           <AnimatedText
             as="h3"
             delay={0.4}
             className="font-heading text-base sm:text-xl md:text-xl lg:text-2xl"
           >
-            Full Stack Developer
+            経営支援パートナー
           </AnimatedText>
           <div className="mt-4 max-w-[42rem] text-center">
             <p className="leading-normal text-muted-foreground text-sm sm:text-base">
-              Open-source Next.js portfolio template. Fork this on GitHub to
-              create your own developer portfolio.
+              プライム上場企業での事業開発、2社のスタートアップの創業・経営経験で得た経験とスキルで、伴走型の経営支援をご提供しています。
             </p>
           </div>
 
           <div className="flex flex-col mt-10 items-center justify-center sm:flex-row sm:space-x-4 gap-3">
             <AnimatedText delay={0.6}>
               <Link
-                href={"https://github.com/namanbarkiya"}
+                href={"https://www.linkedin.com/in/ryota-ishihara/"}
                 target="_blank"
                 className={cn(buttonVariants({ size: "lg" }))}
-                aria-label="View Naman Barkiya's GitHub profile"
+                aria-label="View Ryota Ishihara's LinkedIn profile"
               >
-                <Icons.gitHub className="w-4 h-4 mr-2" /> GitHub
+                <Icons.linkedin className="w-4 h-4 mr-2" /> LinkedIn
               </Link>
             </AnimatedText>
             <AnimatedText delay={0.8}>
               <Link
-                href={"/contact"}
-                rel="noreferrer"
+                href="mailto:ryota61@gmail.com"
                 className={cn(
                   buttonVariants({
                     variant: "outline",
                     size: "lg",
                   })
                 )}
-                aria-label="Contact Naman Barkiya"
+                aria-label="Send email to Ryota Ishihara"
               >
-                <Icons.contact className="w-4 h-4 mr-2" /> Contact
+                <Icons.mail className="w-4 h-4 mr-2" /> Mail
               </Link>
             </AnimatedText>
+            <AnimatedText delay={1.2}>
+              <Icons.chevronDown className="h-6 w-6 mt-10" />
+            </AnimatedText>
           </div>
-          <AnimatedText delay={1.2}>
-            <Icons.chevronDown className="h-6 w-6 mt-10" />
-          </AnimatedText>
         </div>
       </section>
+
       <AnimatedSection
         className="container space-y-6 bg-muted py-10"
         id="skills"
@@ -163,6 +161,7 @@ export default function IndexPage() {
           </Link>
         </AnimatedText>
       </AnimatedSection>
+
       <AnimatedSection
         direction="right"
         className="container space-y-6 py-10 my-14"
@@ -201,12 +200,8 @@ export default function IndexPage() {
             </Button>
           </Link>
         </AnimatedText>
-        {/* <div className="mx-auto text-center md:max-w-[58rem]">
-                    <p className="leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-                        See all the relevant experiences.
-                    </p>
-                </div> */}
       </AnimatedSection>
+
       <AnimatedSection
         direction="left"
         className="container space-y-6 bg-muted py-10 my-14"
@@ -238,6 +233,6 @@ export default function IndexPage() {
           </Link>
         </AnimatedText>
       </AnimatedSection>
-    </ClientPageWrapper>
+    </main>
   );
 }

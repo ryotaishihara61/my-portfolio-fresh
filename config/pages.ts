@@ -14,20 +14,20 @@ type PagesConfig = {
 
 export const pagesConfig: PagesConfig = {
   home: {
-    title: "Home",
+    title: "Ryota Ishihara",
     description: "Welcome to my portfolio website.",
     metadata: {
-      title: "Home",
-      description: "Naman Barkiya's portfolio website.",
+      title: "石原 良太",
+      description: "Ryota Ishihara's portfolio website.",
     },
   },
   skills: {
     title: "Skills",
-    description: "Key skills that define my professional identity.",
+    description: "プライム上場企業での事業開発、2社のスタートアップの創業・経営を通じて得たスキル・経験を活かして、経営の改善をご支援しています",
     metadata: {
       title: "Skills",
       description:
-        "Naman Barkiya's key skills that define his professional identity.",
+        "Ryota Ishihara's key skills that define his professional identity.",
     },
   },
   experience: {
@@ -35,7 +35,7 @@ export const pagesConfig: PagesConfig = {
     description: "Highlighting career journey and impactful projects.",
     metadata: {
       title: "Experience",
-      description: "Naman Barkiya's experience in building web applications.",
+      description: "Ryota Ishihara's experience in building web applications.",
     },
   },
   contact: {
@@ -43,7 +43,7 @@ export const pagesConfig: PagesConfig = {
     description: "Let's connect and explore collaborations.",
     metadata: {
       title: "Contact",
-      description: "Contact Naman Barkiya.",
+      description: "Contact Ryota Ishihara.",
     },
   },
   contributions: {
@@ -52,15 +52,15 @@ export const pagesConfig: PagesConfig = {
     metadata: {
       title: "Contributions",
       description:
-        "Naman Barkiya's open-source contributions and community involvement.",
+        "Ryota Ishihara's open-source contributions and community involvement.",
     },
   },
   resume: {
     title: "Resume",
-    description: "Naman Barkiya's resume.",
+    description: "Ryota Ishihara's resume.",
     metadata: {
       title: "Resume",
-      description: "Naman Barkiya's resume.",
+      description: "Ryota Ishihara's resume.",
     },
   },
   career: {
@@ -68,7 +68,7 @@ export const pagesConfig: PagesConfig = {
     description: "Professional journey and experience timeline.",
     metadata: {
       title: "Career Timeline",
-      description: "Naman Barkiya's professional journey and career timeline.",
+      description: "Ryota Ishihara's professional journey and career timeline.",
     },
   },
 };

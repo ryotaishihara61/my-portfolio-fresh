@@ -31,6 +31,7 @@ import {
   User,
   X,
   Zap,
+  Mail,
 } from "lucide-react";
 import { AiFillStar } from "react-icons/ai";
 import { BiLaugh, BiSolidUser } from "react-icons/bi";
@@ -78,6 +79,7 @@ export const Icons = {
   chevronRight: ChevronRight,
   trash: Trash,
   post: FileText,
+  fileText: FileText,
   page: File,
   media: Image,
   settings: Settings,
@@ -93,6 +95,7 @@ export const Icons = {
   moon: Moon,
   laptop: Laptop,
   menu: Menu,
+  mail: Mail,
   chevronDown: ChevronDown,
   laughEmoji: BiLaugh,
   check: Check,
@@ -126,6 +129,7 @@ export const Icons = {
   linkedin: SiLinkedin,
   userFill: BiSolidUser,
   work: HiBriefcase,
+  sparkles: Sparkles,
   gitHub: ({ ...props }: LucideProps) => (
     <svg
       aria-hidden="true"
