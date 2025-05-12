@@ -7,7 +7,12 @@ export type ValidSkills =
   | "PMO"
   | "デジタルマーケティング"
   | "採用"
-  | "新規事業立ち上げ";
+  | "新規事業立ち上げ"
+  | "Typescript"
+  | "React"
+  | "Databricks"
+  | "Java"
+  | "Python";
 
 export type ValidCategory =
   | "Full Stack"
