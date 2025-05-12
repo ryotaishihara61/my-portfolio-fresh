@@ -5,20 +5,13 @@ export const routesConfig: any = {
       href: "/skills",
     },
     {
-      title: "Experience",
+      title: "Career",
       href: "/experience",
     },
-    {
-      title: "Career",
-      href: "/career",
+   {
+      title: "Linkedin",
+      href: "https://www.linkedin.com/in/ryota-ishihara/",
     },
-    {
-      title: "Contributions",
-      href: "/contributions",
-    },
-    {
-      title: "Contact",
-      href: "/contact",
-    },
+
   ],
 };

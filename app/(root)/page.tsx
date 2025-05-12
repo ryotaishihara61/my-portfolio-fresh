@@ -97,7 +97,7 @@ export default function IndexPage() {
           </AnimatedText>
           <div className="mt-4 max-w-[42rem] text-center">
             <p className="leading-normal text-muted-foreground text-sm sm:text-base">
-              プライム上場企業での事業開発、2社のスタートアップの創業・経営経験で得た経験とスキルで、伴走型の経営支援をご提供しています。
+              プライム上場企業での事業開発、2社のスタートアップの創業・経営経験で得た経験に、生成AI活用を掛け合わせ、伴走型の経営支援をご提供しています。
             </p>
           </div>
 
