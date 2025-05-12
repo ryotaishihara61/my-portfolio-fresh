@@ -1,4 +1,18 @@
 export type ValidSkills =
+  | "Web Dev"
+  | "Full Stack"
+  | "UI/UX"
+  | "Mobile Dev"
+  | ... // ← ここに以下を追加
+  | "事業開発"
+  | "営業戦略"
+  | "営業企画"
+  | "組織マネジメント"
+  | "プロジェクトマネジメント"
+  | "PMO"
+  | "デジタルマーケティング"
+  | "採用"
+  | "新規事業立ち上げ"
   | "Next.js"
   | "React"
   | "GraphQL"
