@@ -13,18 +13,18 @@ interface DescriptionDetailsInterface {
 
 export interface ExperienceInterface {
   id: string;
-  type: ValidExpType;
+  type?: ValidExpType;// オプショナル
   companyName: string;
-  category: ValidCategory[];
+  category?: ValidCategory[];// オプショナル
   shortDescription: string;
   websiteLink?: string;
-  githubLink?: string;
-  techStack: ValidSkills[];
-  startDate: Date;
-  endDate: Date;
+  githubLink?: string;// オプショナル
+  techStack?: ValidSkills[];// オプショナル
+  startDate?: Date;// オプショナル
+  endDate?: Date;// オプショナル
   companyLogoImg: any;
   descriptionDetails: DescriptionDetailsInterface;
-  pagesInfoArr: PagesInfoInterface[];
+  pagesInfoArr?: PagesInfoInterface[];// オプショナル
 }
 
 export const Experiences: ExperienceInterface[] = [
