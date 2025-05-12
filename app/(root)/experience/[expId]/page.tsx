@@ -58,7 +58,7 @@ export default function Experience({ params }: ExperiencePageProps) {
             )}
           </div>
         </h1>
-        <ChipContainer textArr={exp.category} />
+        <ChipContainer textArr={exp.category ?? []} />
         <div className="mt-4 flex space-x-4">
           <Link
             href={siteConfig.links.github}
