@@ -3,7 +3,6 @@ export type ValidSkills =
   | "Full Stack"
   | "UI/UX"
   | "Mobile Dev"
-  | ... // ← ここに以下を追加
   | "事業開発"
   | "営業戦略"
   | "営業企画"
