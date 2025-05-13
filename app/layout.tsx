@@ -98,19 +98,10 @@ export const metadata = {
 export default function RootLayout({ children }: RootLayoutProps) {
   const GA_ID = process.env.NEXT_PUBLIC_GOOGLE_MEASUREMENT_ID;
 
-  // 開発時の警告ログ（ビルドを止めない）
   if (!GA_ID) {
     console.warn("Warning: Google Analytics ID is missing.");
   }
 
-  return (
-    <html lang="en">
-      <body>
-        {children}
-      </body>
-    </html>
-  );
-}
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
@@ -139,9 +130,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <Analytics />
           <Toaster />
           <ModalProvider />
+          {GA_ID && <GoogleAnalytics gaId={GA_ID} />} {/* ✅ GAはbodyの中へ */}
         </ThemeProvider>
       </body>
-      <GoogleAnalytics gaId={GA_ID} />
     </html>
   );
 }
+
